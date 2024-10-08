@@ -1,0 +1,165 @@
+.coursesDetails {
+  .coursesDetailsContainer {
+    width: 90%;
+    margin: 0 auto;
+    .coursesDetailsBanner {
+      height: 60vh;
+      background-image: url("../../../../public/image/coursedetails.jpeg");
+      background-size: cover;
+      background-position: center;
+      margin: 40px 0;
+
+      border-radius: 20px;
+    }
+    .coursesDetailsContents {
+      width: 60%;
+      .coursesDetailsHead {
+        p {
+          width: 250px;
+          text-align: center;
+          padding: 5px 20px;
+          border-radius: 20px;
+          border: 1px solid #110078;
+          color: #110078;
+          background-color: #fff;
+          font-size: 1.2rem;
+          margin: 20px 0px;
+        }
+        h2 {
+          font-size: 45px;
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+      }
+      .coursesDetailsContent {
+        p {
+          line-height: 2;
+          color: #989898;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+      }
+      .coursesDetailsBtn {
+        button {
+          padding: 10px 30px;
+          background-color: #5751e1;
+          border-radius: 8px;
+          outline: none;
+          border: none;
+          font-size: 1rem;
+          color: #fff;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .coursesDetailsCard {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      margin: 20px;
+      padding: 20px;
+      width: 25%;
+      &:hover {
+        transform: translateY(-5px);  
+      }
+ 
+      img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;  
+      }
+
+      .cardInfo {
+        margin: 10px 0;  
+        display: flex;
+        justify-content: space-between;
+       .cardInfo1 {
+          margin: 5px 0; 
+          font-size: 2rem;  
+          color: #00499e;  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .cardInfo2{
+            margin: 5px 0; 
+            font-size: 1rem;  
+            color: #989898;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      }
+
+      .infoBtns {
+        display: flex;  
+        justify-content: space-between;  
+        margin: 15px 0; 
+        gap: 20px; 
+        button {
+            width: 100%;
+          background-color: #fff;  
+          color: #005bb5;  
+          border: 1px solid #005bb5;  
+          border-radius: 5px;  
+          padding: 10px 15px; // Inner padding for buttons
+          cursor: pointer; 
+          transition: background-color 0.3s ease;  
+
+          &:hover {
+            background-color: #00499e;  
+          }
+        }
+      }
+
+      .shortInfo {
+        h2 {
+          font-size: 1.2rem; // Font size for the header
+          margin-bottom: 10px; // Spacing below the header
+          color: #005bb5; // Header color
+        }
+
+        .shortInfoContents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+        }
+
+        .shortInfoContent {
+          display: flex; 
+    
+          label {
+            font-weight: bold; // Bold label
+            margin-right: 5px; // Spacing after label
+          }
+          p {
+            margin: 0; // Reset margin for paragraphs
+          }
+        }
+
+        .shortInfoBtn {
+          display: flex; // Flexbox for share button
+          justify-content: flex-end; // Align to the end
+          button {
+            background-color: #f0f0f0; // Light background for share button
+            color: #005bb5; // Text color
+            border: none; // No border
+            border-radius: 5px; // Rounded corners
+            padding: 8px 12px; // Inner padding
+            cursor: pointer; // Pointer cursor on hover
+            transition: background-color 0.3s ease; // Smooth background color change
+
+            &:hover {
+              background-color: #e0e0e0; 
+            }
+          }
+        }
+      }
+    }
+  }
+}
